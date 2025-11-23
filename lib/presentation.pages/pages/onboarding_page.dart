@@ -1,3 +1,4 @@
+import 'package:car_rent_app/presentation.pages/pages/car_list_page.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingPage extends StatelessWidget {
@@ -35,19 +36,33 @@ class OnboardingPage extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 10),
-            
+
                 Text(
                   'Premium and prestige car daily rental. \nExperience the thrill at a lower price',
                   style: TextStyle(color: Colors.grey, fontSize: 16),
                 ),
-                
+
                 SizedBox(height: 20),
-            
+
                 SizedBox(
                   width: 320,
                   height: 54,
-                  child: ElevatedButton(onPressed: (){}, child: Text('Lets Go', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),)),
-                )
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => CarListPage()),
+                      );
+                    },
+                    child: Text(
+                      'Lets Go',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
