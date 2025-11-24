@@ -2,6 +2,7 @@ import 'package:car_rent_app/data.models/Car.dart';
 import 'package:car_rent_app/presentation.pages/widgets/car_card.dart';
 import 'package:flutter/material.dart';
 
+// ignore: use_key_in_widget_constructors
 class CarListPage extends StatelessWidget {
 
   final List<Car> cars = [
