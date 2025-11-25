@@ -1,4 +1,5 @@
-import 'package:car_rent_app/data.models/Car.dart';
+
+import 'package:car_rent_app/data/models/car.dart';
 import 'package:car_rent_app/presentation.pages/widgets/car_card.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +9,9 @@ class CarListPage extends StatelessWidget {
   final List<Car> cars = [
     Car(model: 'Fortuner', distance: 870, fuelCapacity: 50, pricePerHour: 45),
     Car(model: 'Fortuner', distance: 870, fuelCapacity: 50, pricePerHour: 45),
-    Car(model: 'Fortuner', distance: 870, fuelCapacity: 50, pricePerHour: 45)
+    Car(model: 'Fortuner', distance: 870, fuelCapacity: 50, pricePerHour: 45),
+    Car(model: 'Fortuner', distance: 870, fuelCapacity: 50, pricePerHour: 45),
+    
   ];
 
   @override

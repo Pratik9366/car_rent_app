@@ -1,4 +1,5 @@
-import 'package:car_rent_app/data.models/Car.dart';
+
+import 'package:car_rent_app/data/models/car.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
@@ -82,7 +83,7 @@ Widget carDetailsCard({required Car car}) {
                   SizedBox(width: 10),
                   Icon(Icons.battery_full, color: Colors.white, size: 14),
                   Text(
-                    '${car.fuelCapacity.toString()}',
+                    car.fuelCapacity.toString(),
                     style: TextStyle(color: Colors.white, fontSize: 14),
                   ),
                 ],

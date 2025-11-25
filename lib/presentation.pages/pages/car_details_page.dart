@@ -1,4 +1,5 @@
-import 'package:car_rent_app/data.models/Car.dart';
+
+import 'package:car_rent_app/data/models/car.dart';
 import 'package:car_rent_app/presentation.pages/pages/maps_details_page.dart';
 import 'package:car_rent_app/presentation.pages/widgets/car_card.dart';
 import 'package:car_rent_app/presentation.pages/widgets/more_card.dart';
@@ -36,7 +37,7 @@ class _CarDetailsPageState extends State<CarDetailsPage> with SingleTickerProvid
 
   @override
   void dispose() {
-    _controller!.forward();
+    _controller?.dispose();
     super.dispose();
   }
 
